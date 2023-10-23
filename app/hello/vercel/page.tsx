@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Counter from '../../_components/Counter'
 
 const target = 'Vercel'
 
@@ -12,6 +13,9 @@ export default function Hello() {
       <h1 className="text-xl">{target}</h1>
       <div className="[&>*]:my-4">
         <p>Hello, {target}</p>
+        <div>
+          <Counter defaultCount={5} />
+        </div>
       </div>
     </div>
   )
