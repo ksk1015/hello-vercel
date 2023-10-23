@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Counter from '../_components/Counter'
 import NiceText from '../_components/NiceText'
+import AlertButton from '../_components/AlertButton'
 
 const target = 'World'
 
@@ -20,6 +21,9 @@ export default function Hello() {
         <div>
           <NiceText text="0のときは色が赤くなるテキストコンポーネント → " />
           <NiceText text="0" />
+        </div>
+        <div>
+          <AlertButton />
         </div>
       </div>
     </div>
